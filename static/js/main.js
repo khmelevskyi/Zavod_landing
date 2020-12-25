@@ -216,3 +216,31 @@ $('.projects-slider').owlCarousel({
 
 
 
+// navbar
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+
+
+
+// read more
+function showMore(){
+    //removes the link
+    $('#showMoreLink').addClass("d-none");
+    //shows the #more
+    $('#more').addClass("d-block");
+}
+
+
+
+
+
+
+
+
+
